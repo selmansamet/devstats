@@ -9,6 +9,7 @@ import {GitHubAccount} from './accounts/github';
 import {StackOverflowAccount} from './accounts/stackoverflow';
 import {WakaTimeAccount} from './accounts/wakatime';
 import {GitLabAccount} from './accounts/gitlab';
+import {HackerRankAccount} from './accounts/hackerrank';
 
 import args from './args';
 import * as T from './libs/terminal';
@@ -47,7 +48,8 @@ const accounts: Account[] = [
   new GitHubAccount('sindresorhus'),
   new StackOverflowAccount(2901002),
   new WakaTimeAccount('shroudedcode'),
-  new GitLabAccount('nick.thomas')
+  new GitLabAccount('nick.thomas'),
+  new HackerRankAccount('selmansamet')
 ];
 
 T.render('\n'.repeat(7));
